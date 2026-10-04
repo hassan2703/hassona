@@ -1,0 +1,71 @@
+import { defineField, defineType } from "sanity";
+
+export const project = defineType({
+  name: "project",
+  title: "Project",
+  type: "document",
+  groups: [
+    { name: "story", title: "Story", default: true },
+    { name: "frames", title: "Frames" },
+    { name: "details", title: "Details" },
+  ],
+  fields: [
+    defineField({ name: "title", type: "string", group: "story", validation: (rule) => rule.required() }),
+    defineField({ name: "subtitle", title: "Subtitle (italic line under the title)", type: "string", group: "story" }),
+    defineField({
+      name: "slug",
+      title: "Web address",
+      description: "Click Generate. This becomes /work/your-project",
+      type: "slug",
+      group: "story",
+      options: { source: "title", maxLength: 64 },
+      validation: (rule) => rule.required(),
+    }),
+    defineField({ name: "summary", title: "One-line summary", description: "Shown in search results and social previews.", type: "string", group: "story", validation: (rule) => rule.max(160) }),
+    defineField({ name: "story", title: "Story", description: "A few short paragraphs. Leave a blank line between paragraphs.", type: "text", rows: 8, group: "story" }),
+    defineField({ name: "brief", title: "The brief (commissioned work)", type: "text", rows: 3, group: "story", hidden: ({ document }) => document?.kind !== "commissioned" }),
+    defineField({ name: "cover", title: "Cover frame", description: "Opens the project and its chapter on the home page.", type: "picture", group: "frames", validation: (rule) => rule.required() }),
+    defineField({
+      name: "rows",
+      title: "Frames, row by row",
+      description: "Add a row, pick its layout, drop in the frames. Drag rows to reorder.",
+      type: "array",
+      of: [{ type: "row" }],
+      group: "frames",
+    }),
+    defineField({
+      name: "kind",
+      type: "string",
+      group: "details",
+      initialValue: "personal",
+      options: { layout: "radio", direction: "horizontal", list: [{ title: "Personal work", value: "personal" }, { title: "Commissioned", value: "commissioned" }] },
+    }),
+    defineField({ name: "client", type: "string", group: "details", hidden: ({ document }) => document?.kind !== "commissioned" }),
+    defineField({ name: "place", type: "string", group: "details", description: "e.g. South Sinai, Egypt" }),
+    defineField({ name: "year", type: "string", group: "details", description: "e.g. 2024 or Ongoing" }),
+    defineField({ name: "role", title: "Your role", type: "string", group: "details", initialValue: "Photographer" }),
+    defineField({
+      name: "categories",
+      type: "array",
+      group: "details",
+      of: [{ type: "string" }],
+      options: {
+        layout: "grid",
+        list: [
+          { title: "Street", value: "street" },
+          { title: "Architecture", value: "architecture" },
+          { title: "Portraits", value: "portraits" },
+          { title: "Events", value: "events" },
+          { title: "Journeys", value: "journeys" },
+        ],
+      },
+    }),
+    defineField({ name: "featured", title: "Show as a chapter on the home page", type: "boolean", group: "details", initialValue: true }),
+    defineField({ name: "position", title: "Order", description: "Lower numbers come first. 1 is the first chapter.", type: "number", group: "details" }),
+  ],
+  orderings: [{ title: "Order", name: "position", by: [{ field: "position", direction: "asc" }] }],
+  preview: {
+    select: { title: "title", year: "year", kind: "kind", media: "cover" },
+    prepare: ({ title, year, kind, media }) => ({ title, subtitle: [kind === "commissioned" ? "Commissioned" : "Personal", year].filter(Boolean).join(" · "), media }),
+  },
+});
