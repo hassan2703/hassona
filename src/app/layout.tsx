@@ -5,8 +5,10 @@ import { siteUrl } from "@/lib/site";
 import "./globals.css";
 
 /* Runs before first paint: marks JS as available (so images can start dark and
-   develop) and decides whether the first-visit exposure should play. */
-const boot = `(function(){var d=document.documentElement;d.classList.add('js');try{if(location.pathname==='/'&&!sessionStorage.getItem('hb-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches){d.dataset.intro='1'}}catch(e){}})();`;
+   develop) and runs the first-visit exposure on the home page. The intro ends
+   by itself after 2.4s, or at the first key, click or tap, even if the rest of
+   the JavaScript is still loading. */
+const boot = `(function(){var d=document.documentElement;d.classList.add('js');try{if(location.pathname!=='/'||sessionStorage.getItem('hb-intro')||matchMedia('(prefers-reduced-motion: reduce)').matches)return;d.dataset.intro='1';var t,end=function(){clearTimeout(t);try{sessionStorage.setItem('hb-intro','1')}catch(e){}delete d.dataset.intro;['keydown','pointerdown'].forEach(function(e){removeEventListener(e,end,true)})};t=setTimeout(end,2450);['keydown','pointerdown'].forEach(function(e){addEventListener(e,end,true)})}catch(e){}})();`;
 
 export async function generateMetadata(): Promise<Metadata> {
   const { settings } = await getArchive();

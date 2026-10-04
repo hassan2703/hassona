@@ -7,7 +7,4 @@
   <rect width="1440" height="1800" fill="url(#keylight)"/>
   <ellipse cx="787.5833650007845" cy="756" rx="187.20000000000002" ry="216" fill="#0f0d0b"/>
   <path d="M297.9833650007845 1800 C 355.5833650007845 1116, 1219.5833650007844 1116, 1277.1833650007845 1800 Z" fill="#0f0d0b"/>
-  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="26" letter-spacing="3.12" fill="#ECE6DD" fill-opacity="0.62">
-    <text x="58" y="1742">FACES · 07</text>
-    <text x="1382" y="84" text-anchor="end">PLACEHOLDER · REPLACE IN STUDIO</text>
-  </g></svg>
+  <text x="720" y="900" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="29" letter-spacing="4.0600000000000005" fill="#ECE6DD" fill-opacity="0.55">PLACEHOLDER · FACES · 07</text></svg>

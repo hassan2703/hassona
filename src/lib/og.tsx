@@ -23,11 +23,11 @@ export async function ogCard({ eyebrow, title, italic, footer, picture }: { eyeb
       <div style={{ width: "100%", height: "100%", display: "flex", position: "relative", background: "#0a0908", color: "#ece6dd" }}>
         {bg ? (
           // eslint-disable-next-line @next/next/no-img-element
-          <img src={bg} alt="" width={1200} height={630} style={{ position: "absolute", inset: 0, width: 1200, height: 630, objectFit: "cover", opacity: 0.55 }} />
+          <img src={bg} alt="" width={1200} height={630} style={{ position: "absolute", top: 0, left: 0, width: 1200, height: 630, objectFit: "cover", opacity: 0.55 }} />
         ) : (
-          <div style={{ position: "absolute", inset: 0, display: "flex", background: "linear-gradient(180deg, #0a0908 0%, #2b2620 55%, #6d5743 78%, #14110e 100%)", opacity: 0.6 }} />
+          <div style={{ position: "absolute", top: 0, left: 0, width: 1200, height: 630, display: "flex", background: "linear-gradient(180deg, #0a0908 0%, #2b2620 55%, #6d5743 78%, #14110e 100%)", opacity: 0.6 }} />
         )}
-        <div style={{ position: "absolute", inset: 0, display: "flex", flexDirection: "column", justifyContent: "space-between", padding: 64 }}>
+        <div style={{ position: "absolute", top: 0, left: 0, width: 1200, height: 630, display: "flex", flexDirection: "column", justifyContent: "space-between", padding: 64 }}>
           <div style={{ display: "flex", justifyContent: "space-between", fontFamily: "Mono", fontSize: 20, letterSpacing: 3, textTransform: "uppercase", color: "#cfc8be" }}>
             <span>{eyebrow}</span>
             <span>Hassan Badawy</span>

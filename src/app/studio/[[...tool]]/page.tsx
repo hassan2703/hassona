@@ -15,7 +15,7 @@ function StudioSetup() {
     <main className="wrap" style={{ minHeight: "100svh", display: "grid", alignContent: "center", gap: "1.5rem", maxWidth: "46rem" }}>
       <p className="t-data" style={{ color: "var(--color-ash)" }}>Studio · not connected yet</p>
       <h1 className="t-display t-lg">The admin panel is ready. It needs a Sanity project.</h1>
-      <ol className="t-body" style={{ display: "grid", gap: "0.6rem", paddingLeft: "1.2rem" }}>
+      <ol className="t-body" style={{ display: "grid", gap: "0.6rem", paddingLeft: "1.2rem", listStyle: "decimal" }}>
         <li>Create a free project at sanity.io/manage and copy its Project ID.</li>
         <li>Add NEXT_PUBLIC_SANITY_PROJECT_ID and NEXT_PUBLIC_SANITY_DATASET in Vercel, then redeploy.</li>
         <li>In the Sanity project, add this site&apos;s address under API &gt; CORS origins, with credentials allowed.</li>

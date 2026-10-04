@@ -40,13 +40,9 @@ const RATIOS = {
 const mono = "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace";
 
 function label(w, h, text) {
-  const size = Math.round(Math.min(w, h) * 0.018);
-  const pad = Math.round(Math.min(w, h) * 0.04);
+  const size = Math.round(Math.min(w, h) * 0.02);
   return `
-  <g font-family="${mono}" font-size="${size}" letter-spacing="${size * 0.12}" fill="#ECE6DD" fill-opacity="0.62">
-    <text x="${pad}" y="${h - pad}">${text}</text>
-    <text x="${w - pad}" y="${pad + size}" text-anchor="end">PLACEHOLDER · REPLACE IN STUDIO</text>
-  </g>`;
+  <text x="${w / 2}" y="${h * 0.5}" text-anchor="middle" font-family="${mono}" font-size="${size}" letter-spacing="${size * 0.14}" fill="#ECE6DD" fill-opacity="0.55">PLACEHOLDER · ${text}</text>`;
 }
 
 function ridgePath(r, w, h, base, amp, steps) {

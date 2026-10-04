@@ -222,11 +222,12 @@ a { color: inherit; text-decoration: none; }
   pointer-events: none;
 }
 
-/* Page change: the next page develops out of black */
-.page-expose { animation: page-in var(--t-page) var(--ease-out) both; }
+/* Page change: the next page develops out of black.
+   Opacity, not filter: a filter would trap every position:fixed child. */
+.page-expose { animation: page-in var(--t-page) var(--ease-out) backwards; }
 @keyframes page-in {
-  from { filter: brightness(0); }
-  to { filter: brightness(1); }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 /* =========================================================================
@@ -318,8 +319,10 @@ html[data-dim="1"] .vf { opacity: 0.4; }
 }
 .mode-switch button[aria-pressed="true"] { color: var(--color-paper); }
 .mode-switch button:hover { color: var(--color-paper); }
+.mode-switch button { white-space: nowrap; }
 @media (max-width: 767px) {
-  .mode-switch { top: auto; bottom: calc(60px + env(safe-area-inset-bottom, 0px)); }
+  .mode-switch { top: calc(58px + env(safe-area-inset-top, 0px)); }
+  .mode-switch button { padding: 0.4rem 0.6rem; font-size: 0.66rem; }
 }
 
 /* =========================================================================
@@ -384,11 +387,14 @@ html.snap { scroll-snap-type: y proximity; }
   pointer-events: none;
 }
 
-/* Wide images on tall screens are shown whole, in black, never cropped */
+/* On tall screens a chapter's frame fills the top two thirds, cropped around
+   the focal point set in the Studio; the title card sits on black below.
+   Inside a project every frame is shown whole. */
 @media (orientation: portrait) {
-  .chapter .expose.is-landscape > img,
-  .opening .expose.is-landscape > img { object-fit: contain; }
-  .chapter .expose.is-landscape, .opening .expose.is-landscape { background-image: none !important; }
+  .opening > .expose.expose, .chapter > .expose.expose, .next-project > .expose.expose { bottom: auto; height: 66svh; }
+  .opening.scrim::after, .chapter.scrim::after, .next-project.scrim::after {
+    background: linear-gradient(180deg, rgb(10 9 8 / 0.4) 0%, rgb(10 9 8 / 0) 18%, rgb(10 9 8 / 0) 44%, rgb(10 9 8 / 1) 66%);
+  }
 }
 
 .title-card {
@@ -834,3 +840,31 @@ mux-player { --media-accent-color: var(--color-dusk); --controls-backdrop-color:
 
 /* A link that makes its whole positioned parent clickable */
 .stretch::after { content: ""; position: absolute; inset: 0; z-index: 1; }
+
+/* ---- QA pass 1 ---------------------------------------------------------- */
+
+/* room for Bodoni's long descenders under big headlines */
+.t-hero, .t-xl { padding-bottom: 0.12em; }
+
+/* email addresses read better in their real case */
+.door .addr { text-transform: none; letter-spacing: 0.04em; }
+
+@media (max-width: 767px) {
+  /* soft bars so content passing under the fixed corners stays legible */
+  .vf::before, .vf::after {
+    content: "";
+    position: absolute;
+    left: 0; right: 0;
+    pointer-events: none;
+    z-index: -1;
+  }
+  .vf::before { top: 0; height: calc(64px + env(safe-area-inset-top, 0px)); background: linear-gradient(to bottom, rgb(10 9 8 / 0.75), rgb(10 9 8 / 0)); }
+  .vf::after { bottom: 0; height: calc(84px + env(safe-area-inset-bottom, 0px)); background: linear-gradient(to top, rgb(10 9 8 / 0.95) 40%, rgb(10 9 8 / 0)); }
+  .vf-corner { mix-blend-mode: normal; }
+
+  .plist-row { align-items: center; }
+  .filters { flex-wrap: nowrap; overflow-x: auto; margin-inline: calc(var(--gutter) * -1); padding-inline: var(--gutter); scrollbar-width: none; }
+  .filters::-webkit-scrollbar { display: none; }
+  .filters .btn-line { flex: none; }
+  .door { padding-inline: 0; }
+}

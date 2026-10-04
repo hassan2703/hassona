@@ -13,7 +13,7 @@ export async function generateMetadata(): Promise<Metadata> {
     title: "About",
     description: settings.intro,
     alternates: { canonical: "/about" },
-    openGraph: { type: "profile", title: `${settings.name}, ${settings.title}`, description: settings.intro, url: "/about" },
+    openGraph: { type: "profile", title: `${settings.name}, ${settings.title}`, description: settings.intro, url: "/about", images: ["/opengraph-image"] },
   };
 }
 

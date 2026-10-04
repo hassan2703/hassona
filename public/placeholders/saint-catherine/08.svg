@@ -10,7 +10,4 @@
       <rect x="816.2270966805518" y="889.9336378164589" width="10.8" height="84.00000000000001" rx="5.4"/>
       <rect x="848.6270966805517" y="896.653637816459" width="10.8" height="77.28000000000002" rx="5.4"/>
     </g>
-  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" letter-spacing="2.6399999999999997" fill="#ECE6DD" fill-opacity="0.62">
-    <text x="48" y="1152">SAINT CATHERINE · 08</text>
-    <text x="1752" y="70" text-anchor="end">PLACEHOLDER · REPLACE IN STUDIO</text>
-  </g></svg>
+  <text x="900" y="600" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="24" letter-spacing="3.3600000000000003" fill="#ECE6DD" fill-opacity="0.55">PLACEHOLDER · SAINT CATHERINE · 08</text></svg>

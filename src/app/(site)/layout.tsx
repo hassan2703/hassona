@@ -18,7 +18,7 @@ export default async function SiteLayout({ children }: { children: React.ReactNo
       <main id="main">{children}</main>
       <Darkroom />
       <Cursor />
-      <Analytics />
+      {process.env.VERCEL ? <Analytics /> : null}
     </ReadoutProvider>
   );
 }

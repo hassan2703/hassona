@@ -7,7 +7,4 @@
     </linearGradient>
   </defs>
   <rect width="1800" height="1200" fill="url(#sky)"/><path d="M0 1200 L0 683.4234013035895 L257.1 739.8 L514.3 648.9 L771.4 651.5 L1028.6 746.6 L1285.7 502.2 L1542.9 591.7 L1800.0 594.3 L1800 1200 Z" fill="#3a3937"/><path d="M0 1200 L0 827.4234013035895 L180.0 697.9 L360.0 825.4 L540.0 789.8 L720.0 751.3 L900.0 714.5 L1080.0 846.0 L1260.0 782.4 L1440.0 870.8 L1620.0 686.5 L1800.0 868.4 L1800 1200 Z" fill="#262524"/><path d="M0 1200 L0 971.4234013035895 L138.5 930.3 L276.9 873.6 L415.4 926.8 L553.8 876.4 L692.3 920.7 L830.8 884.5 L969.2 927.6 L1107.7 883.4 L1246.2 969.2 L1384.6 889.9 L1523.1 912.0 L1661.5 925.9 L1800.0 922.6 L1800 1200 Z" fill="#151514"/>
-  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" letter-spacing="2.6399999999999997" fill="#ECE6DD" fill-opacity="0.62">
-    <text x="48" y="1152">SAINT CATHERINE · 05</text>
-    <text x="1752" y="70" text-anchor="end">PLACEHOLDER · REPLACE IN STUDIO</text>
-  </g></svg>
+  <text x="900" y="600" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="24" letter-spacing="3.3600000000000003" fill="#ECE6DD" fill-opacity="0.55">PLACEHOLDER · SAINT CATHERINE · 05</text></svg>
