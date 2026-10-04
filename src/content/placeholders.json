@@ -1,0 +1,278 @@
+{
+  "hero": [
+    {
+      "src": "/placeholders/hero/01.svg",
+      "width": 2390,
+      "height": 1000
+    }
+  ],
+  "portrait": [
+    {
+      "src": "/placeholders/portrait/01.svg",
+      "width": 1440,
+      "height": 1800
+    }
+  ],
+  "saint-catherine": [
+    {
+      "src": "/placeholders/saint-catherine/01.svg",
+      "width": 2390,
+      "height": 1000
+    },
+    {
+      "src": "/placeholders/saint-catherine/02.svg",
+      "width": 1800,
+      "height": 1200
+    },
+    {
+      "src": "/placeholders/saint-catherine/03.svg",
+      "width": 1200,
+      "height": 1800
+    },
+    {
+      "src": "/placeholders/saint-catherine/04.svg",
+      "width": 1200,
+      "height": 1800
+    },
+    {
+      "src": "/placeholders/saint-catherine/05.svg",
+      "width": 1800,
+      "height": 1200
+    },
+    {
+      "src": "/placeholders/saint-catherine/06.svg",
+      "width": 1440,
+      "height": 1800
+    },
+    {
+      "src": "/placeholders/saint-catherine/07.svg",
+      "width": 1800,
+      "height": 1200
+    },
+    {
+      "src": "/placeholders/saint-catherine/08.svg",
+      "width": 1800,
+      "height": 1200
+    },
+    {
+      "src": "/placeholders/saint-catherine/09.svg",
+      "width": 1500,
+      "height": 1500
+    },
+    {
+      "src": "/placeholders/saint-catherine/10.svg",
+      "width": 1200,
+      "height": 1800
+    },
+    {
+      "src": "/placeholders/saint-catherine/11.svg",
+      "width": 1800,
+      "height": 1200
+    },
+    {
+      "src": "/placeholders/saint-catherine/12.svg",
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "kerastase-elixir": [
+    {
+      "src": "/placeholders/kerastase-elixir/01.svg",
+      "width": 1800,
+      "height": 1200
+    },
+    {
+      "src": "/placeholders/kerastase-elixir/02.svg",
+      "width": 1200,
+      "height": 1800
+    },
+    {
+      "src": "/placeholders/kerastase-elixir/03.svg",
+      "width": 1200,
+      "height": 1800
+    },
+    {
+      "src": "/placeholders/kerastase-elixir/04.svg",
+      "width": 1800,
+      "height": 1200
+    },
+    {
+      "src": "/placeholders/kerastase-elixir/05.svg",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "src": "/placeholders/kerastase-elixir/06.svg",
+      "width": 1440,
+      "height": 1800
+    },
+    {
+      "src": "/placeholders/kerastase-elixir/07.svg",
+      "width": 1800,
+      "height": 1200
+    },
+    {
+      "src": "/placeholders/kerastase-elixir/08.svg",
+      "width": 1800,
+      "height": 1200
+    },
+    {
+      "src": "/placeholders/kerastase-elixir/09.svg",
+      "width": 1200,
+      "height": 1800
+    },
+    {
+      "src": "/placeholders/kerastase-elixir/10.svg",
+      "width": 1800,
+      "height": 1200
+    }
+  ],
+  "cairo-streets": [
+    {
+      "src": "/placeholders/cairo-streets/01.svg",
+      "width": 1800,
+      "height": 1200
+    },
+    {
+      "src": "/placeholders/cairo-streets/02.svg",
+      "width": 1200,
+      "height": 1800
+    },
+    {
+      "src": "/placeholders/cairo-streets/03.svg",
+      "width": 1800,
+      "height": 1200
+    },
+    {
+      "src": "/placeholders/cairo-streets/04.svg",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "src": "/placeholders/cairo-streets/05.svg",
+      "width": 1200,
+      "height": 1800
+    },
+    {
+      "src": "/placeholders/cairo-streets/06.svg",
+      "width": 1800,
+      "height": 1200
+    },
+    {
+      "src": "/placeholders/cairo-streets/07.svg",
+      "width": 1800,
+      "height": 1200
+    },
+    {
+      "src": "/placeholders/cairo-streets/08.svg",
+      "width": 1200,
+      "height": 1800
+    }
+  ],
+  "structures": [
+    {
+      "src": "/placeholders/structures/01.svg",
+      "width": 1200,
+      "height": 1800
+    },
+    {
+      "src": "/placeholders/structures/02.svg",
+      "width": 1200,
+      "height": 1800
+    },
+    {
+      "src": "/placeholders/structures/03.svg",
+      "width": 1800,
+      "height": 1200
+    },
+    {
+      "src": "/placeholders/structures/04.svg",
+      "width": 1500,
+      "height": 1500
+    },
+    {
+      "src": "/placeholders/structures/05.svg",
+      "width": 1200,
+      "height": 1800
+    },
+    {
+      "src": "/placeholders/structures/06.svg",
+      "width": 1800,
+      "height": 1200
+    },
+    {
+      "src": "/placeholders/structures/07.svg",
+      "width": 1200,
+      "height": 1800
+    },
+    {
+      "src": "/placeholders/structures/08.svg",
+      "width": 1800,
+      "height": 1200
+    }
+  ],
+  "faces": [
+    {
+      "src": "/placeholders/faces/01.svg",
+      "width": 1440,
+      "height": 1800
+    },
+    {
+      "src": "/placeholders/faces/02.svg",
+      "width": 1440,
+      "height": 1800
+    },
+    {
+      "src": "/placeholders/faces/03.svg",
+      "width": 1200,
+      "height": 1800
+    },
+    {
+      "src": "/placeholders/faces/04.svg",
+      "width": 1440,
+      "height": 1800
+    },
+    {
+      "src": "/placeholders/faces/05.svg",
+      "width": 1200,
+      "height": 1800
+    },
+    {
+      "src": "/placeholders/faces/06.svg",
+      "width": 1440,
+      "height": 1800
+    },
+    {
+      "src": "/placeholders/faces/07.svg",
+      "width": 1440,
+      "height": 1800
+    },
+    {
+      "src": "/placeholders/faces/08.svg",
+      "width": 1200,
+      "height": 1800
+    }
+  ],
+  "films": [
+    {
+      "src": "/placeholders/films/01.svg",
+      "width": 2390,
+      "height": 1000
+    },
+    {
+      "src": "/placeholders/films/02.svg",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "src": "/placeholders/films/03.svg",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "src": "/placeholders/films/04.svg",
+      "width": 2390,
+      "height": 1000
+    }
+  ]
+}

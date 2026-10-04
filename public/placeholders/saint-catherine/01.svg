@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2390 1000" width="2390" height="1000" role="img" aria-label="Placeholder artwork">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b2620"/>
+      <stop offset="0.44" stop-color="#6d5743"/>
+      <stop offset="0.55" stop-color="#c49a70"/>
+    </linearGradient>
+  </defs>
+  <rect width="2390" height="1000" fill="url(#sky)"/><path d="M0 1000 L0 590.2162547875196 L341.4 640.2 L682.9 646.1 L1024.3 465.6 L1365.7 569.3 L1707.1 464.6 L2048.6 479.3 L2390.0 465.9 L2390 1000 Z" fill="#4a3a2e"/><path d="M0 1000 L0 710.2162547875196 L239.0 730.0 L478.0 624.7 L717.0 730.4 L956.0 674.9 L1195.0 749.4 L1434.0 676.8 L1673.0 642.1 L1912.0 600.2 L2151.0 718.3 L2390.0 661.2 L2390 1000 Z" fill="#2a221c"/><path d="M0 1000 L0 830.2162547875196 L183.8 751.3 L367.7 768.1 L551.5 778.6 L735.4 862.2 L919.2 818.8 L1103.1 825.3 L1286.9 792.6 L1470.8 778.4 L1654.6 860.3 L1838.5 818.2 L2022.3 859.5 L2206.2 767.0 L2390.0 794.1 L2390 1000 Z" fill="#14110e"/><g fill="#0d0b09">
+      <rect x="1091.916303944681" y="680.2162547875196" width="14.34" height="70" rx="7.17"/>
+      <rect x="1134.936303944681" y="685.8162547875196" width="14.34" height="64.4" rx="7.17"/>
+    </g>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" letter-spacing="2.16" fill="#ECE6DD" fill-opacity="0.62">
+    <text x="40" y="960">SAINT CATHERINE · 01</text>
+    <text x="2350" y="58" text-anchor="end">PLACEHOLDER · REPLACE IN STUDIO</text>
+  </g></svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2390 1000" width="2390" height="1000" role="img" aria-label="Placeholder artwork">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b2620"/>
+      <stop offset="0.48" stop-color="#6d5743"/>
+      <stop offset="0.60" stop-color="#c49a70"/>
+    </linearGradient>
+  </defs>
+  <rect width="2390" height="1000" fill="url(#sky)"/><path d="M0 1000 L0 639.0694696549326 L341.4 662.3 L682.9 504.4 L1024.3 486.3 L1365.7 637.4 L1707.1 681.5 L2048.6 571.4 L2390.0 597.7 L2390 1000 Z" fill="#4a3a2e"/><path d="M0 1000 L0 759.0694696549326 L239.0 787.6 L478.0 687.3 L717.0 742.2 L956.0 807.2 L1195.0 662.4 L1434.0 725.4 L1673.0 687.3 L1912.0 649.2 L2151.0 714.1 L2390.0 794.1 L2390 1000 Z" fill="#2a221c"/><path d="M0 1000 L0 879.0694696549326 L183.8 848.0 L367.7 870.6 L551.5 876.7 L735.4 855.2 L919.2 906.4 L1103.1 835.6 L1286.9 831.5 L1470.8 802.4 L1654.6 818.8 L1838.5 873.1 L2022.3 828.8 L2206.2 876.9 L2390.0 836.8 L2390 1000 Z" fill="#14110e"/>
+  <rect width="2390" height="60" fill="#000"/><rect y="940" width="2390" height="60" fill="#000"/>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" letter-spacing="2.16" fill="#ECE6DD" fill-opacity="0.62">
+    <text x="40" y="960">FILM POSTER · 01</text>
+    <text x="2350" y="58" text-anchor="end">PLACEHOLDER · REPLACE IN STUDIO</text>
+  </g></svg>
