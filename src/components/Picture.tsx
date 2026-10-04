@@ -27,6 +27,8 @@ export function Picture({ picture, sizes = "100vw", priority, fit = "cover", cla
     fit === "contain" && "fit-contain",
     fit === "natural" && "fit-natural",
     landscape && "is-landscape",
+    // the page's main image paints at once so it never delays the first view
+    priority && "is-exposed",
     className,
   ]
     .filter(Boolean)

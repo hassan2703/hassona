@@ -122,7 +122,7 @@ a { color: inherit; text-decoration: none; }
 .t-data {
   font-family: var(--font-mono);
   font-weight: 400;
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   line-height: 1.5;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -322,7 +322,7 @@ html[data-dim="1"] .vf { opacity: 0.4; }
 .mode-switch button { white-space: nowrap; }
 @media (max-width: 767px) {
   .mode-switch { top: calc(58px + env(safe-area-inset-top, 0px)); }
-  .mode-switch button { padding: 0.4rem 0.6rem; font-size: 0.66rem; }
+  .mode-switch button { padding: 0.4rem 0.6rem; font-size: 0.7rem; }
 }
 
 /* =========================================================================
@@ -443,7 +443,7 @@ html.snap { scroll-snap-type: y proximity; }
   transition: opacity var(--t-hover) var(--ease-out), filter var(--t-hover);
 }
 .sheet-frame .expose { height: var(--h); }
-.sheet-frame .t-data { color: var(--color-ash); font-size: 0.62rem; }
+.sheet-frame .t-data { color: var(--color-ash); font-size: 0.75rem; }
 .sheet:has(.sheet-frame:hover) .sheet-frame:not(:hover),
 .sheet:has(.sheet-frame:focus-visible) .sheet-frame:not(:focus-visible) { opacity: 0.35; }
 .sheet-frame:hover .t-data { color: var(--color-dusk); }
