@@ -65,7 +65,7 @@ qa/                    Playwright smoke and interaction tests
 docs/                  content guide, showreel brief, content checklist
 ```
 
-**How content flows:** every page asks `getArchive()` in `src/lib/content.ts` for content. If Sanity is configured it reads from Sanity; otherwise it uses `src/content/seed.ts`. If Sanity is connected but *Site settings* has not been filled in yet, the seed bio and contact details are used so the site never shows blanks.
+**How content flows:** every page asks `getArchive()` in `src/lib/content.ts` for content. If Sanity is configured it reads from Sanity; otherwise it uses `src/content/seed.ts`. While the Studio has no published projects (or films, or Site settings), the built-in ones are shown instead, so connecting an empty Studio never blanks the site. The first project you publish replaces all the built-in projects; the same goes for films.
 
 ## Running it locally
 

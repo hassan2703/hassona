@@ -205,11 +205,15 @@ async function fromSanity(): Promise<Archive | null> {
   if (!client) return null;
   try {
     const raw = await client.fetch<RawArchive>(archiveQuery, {}, { next: { revalidate: 3600, tags: ["sanity"] } });
-    const { projects, totalFrames } = number(clean((raw.projects || []).map(mapProject)));
+    // Until the first project or film is published in the Studio, keep showing
+    // the built-in ones so a freshly connected, empty Studio never blanks the site.
+    const published = clean((raw.projects || []).map(mapProject));
+    const { projects, totalFrames } = number(published.length ? published : seed.projects);
+    const films = clean((raw.films || []).map(mapFilm));
     return {
       settings: mapSettings(raw.settings),
       projects,
-      films: clean((raw.films || []).map(mapFilm)),
+      films: films.length ? films : seed.films,
       totalFrames,
     };
   } catch (error) {
