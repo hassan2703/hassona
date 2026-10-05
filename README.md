@@ -2,6 +2,8 @@
 
 The portfolio of **Hassan Badawy**, photographer and director based in Cairo.
 
+**Live:** https://hassona-alpha.vercel.app
+
 > A photograph is a piece of time someone chose to keep. This site is where Hassan keeps the moments he saw differently, and hands them to you.
 
 The site behaves like a long exposure. Every page starts in near-black and photographs *develop* into view. The interface sits in the four corners of the screen like a camera viewfinder, so it never covers the work. The home page is a **screening**: one project per screen, like scenes in a film. One switch turns it into a **contact sheet** of every numbered frame. Films play in a **theatre** that dims everything else to black.
@@ -108,7 +110,7 @@ Until this is done, `/studio` shows a short setup page and the site runs on the 
    - `NEXT_PUBLIC_SANITY_PROJECT_ID` = your Project ID
    - `NEXT_PUBLIC_SANITY_DATASET` = `production`
    - `SANITY_REVALIDATE_SECRET` = any long random string (keep it private)
-   - `NEXT_PUBLIC_SITE_URL` = your live address, for example `https://hassanbadawy.vercel.app`
+   - `NEXT_PUBLIC_SITE_URL` = your live address, for example `https://hassona-alpha.vercel.app`
 
    Then redeploy.
 3. **Allow the site to talk to Sanity.** In sanity.io/manage > your project > **API > CORS origins**, add your live address and `http://localhost:3000`, both with **Allow credentials** ticked.
